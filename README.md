@@ -3,9 +3,9 @@ Made with Svelte
 By Maxime Bouchouareb
 2021
 
-- #1-Presentation
-- #2-Technologies
-- #3-Ressources
+1.Presentation
+2.Technologies
+3.Ressources
 
 # 1: Presentation
 
