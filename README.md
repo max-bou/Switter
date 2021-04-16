@@ -6,8 +6,8 @@ By Maxime Bouchouareb
 - #1-Presentation
 - #2-Technologies
 - #3-Ressources
-
-#1: Presentation
+################
+1: Presentation
 
 Here's my first web application with Svelte !
 I've been inspired by the famous tweeter feed.
