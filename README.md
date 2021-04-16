@@ -24,16 +24,16 @@ Here's some features:
 #  2: Technologies  #
 #####################
 
-IDE: VSCode
-NodeJS: 15.8.0
-npm: 6.14.11
-HTML5+CSS3 (even there ain't mush of this)
+- IDE: VSCode
+- NodeJS: 15.8.0
+- npm: 6.14.11
+- HTML5+CSS3 (even there ain't mush of this)
 
 #####################
 #  3: Ressources    #
 #####################
 
-https://svelte.dev
-https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started
+- https://svelte.dev
+- https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Client-side_JavaScript_frameworks/Svelte_getting_started
 
 Thanks for reading !
