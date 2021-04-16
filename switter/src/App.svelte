@@ -3,7 +3,7 @@ import { text } from "svelte/internal";
 import Message from "./Message.svelte";
 export let name;
 	let messages=[];
-	// Variable de flag, pour afficher/cacher les champs
+	// "Flag" variable, to hide/show the form fields
 	let isVisible = false;
 
 	function addMessage(event){
@@ -12,7 +12,7 @@ export let name;
 	}
 
 	const options={
-		//CF: doc mozilla DateTimeFormat
+		//CF: mozilla doc @DateTimeFormat
 		weekday:"long",
 		year:"numeric",
 		month:"long",

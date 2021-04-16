@@ -6,24 +6,24 @@
         let author = "";
         let maxLength = 140;
 
-        // Utiliser $: pour surveiller cette variable, à chaque changement elle sera modifiée
+        // $: is for a listened variable, it will be update with every modification
         $: nbChar = message.length;
-        // On va désactiver le bouton send quand le message est trop long
+        // This listened variable is for disable the "send" button when the message is not valid
         $: disabled = message.length > maxLength || message.length == 0 ? true : false;
 
 
         function saveMessage(){
-		// Chaque nouveau message sera stocké dans le tableau messages 
+		// Add every new message in the messages aray
 		const newMessage={
 			id:Date.now(),
 			text:message,
-            // Ici on récupère l'author définit dans le comp parent
+            // Here we add the author from the parent comp, else set "anonymous" as default
 			author: author || "anonymous",
             date: new Date()
 		};
 
         dispatch('message', newMessage);
-		// Reseter les variables pour vider les champs de saisie
+		// Reset variables to clean the text fields
 		message="";
         author="";
 	}
@@ -46,7 +46,7 @@
 	<br>
     <!-- svelte-ignore missing-declaration -->
 	<button on:click={saveMessage} disabled={disabled}>Send</button>
-    <!--Application de la class alert de manière conditionelle pour signaler qu'on a dépassé la limite de charactère-->
+    <!-- Conditional applying of the ".alert" class to warn the user about his message validity -->
     <span class:alert={nbChar>maxLength}>{nbChar}</span>
     {#if disabled}
         <span class="alert">Invalid message !</span>
